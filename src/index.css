@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+:root {
+  --primary: #194a50;
+  --secondary: #0c2431;
+  --light-v2: #e1dad2;
+  --color-black: #222;
+  --color-white: #f4f4f4;
 
+  /* Status colors */
+  --error: #842a2b;
+  --success: #657c59;
+  --pending: #666;
+  --warning: #7e6939;
+}
 * {
   box-sizing: border-box;
 }

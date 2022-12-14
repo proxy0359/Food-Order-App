@@ -17,7 +17,7 @@
 
 .control input {
   font: inherit;
-  border: 1px solid #ccc;
+  border: 1px solid var(--light-v2);
   border-radius: 4px;
   width: 20rem;
   max-width: 100%;
@@ -31,7 +31,7 @@
 
 .actions button {
   font: inherit;
-  color: #5a1a01;
+  color: var(--primary);
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -41,29 +41,33 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #ffe6dc;
+  background-color: var(--color-white);
 }
 
 .actions .submit {
-  border: 1px solid #5a1a01;
-  background-color: #5a1a01;
-  color: white;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--color-white);
 }
 
 .actions .cancel {
-  border: 1px solid #5a1a01;
+  border: 1px solid var(--primary);
 }
 
 .actions .submit:hover,
 .actions .submit:active {
-  background-color: #7a2706;
+  background-color: var(--primary);
 }
 
 .invalid label {
-  color: #ca3e51;
+  color: var(--error);
 }
 
 .invalid input {
-  border-color: #aa0b20;
-  background-color: #ffeff1;
+  border-color: var(--error);
+  background-color: var(--color-white);
+}
+
+.invalid p {
+  color: var(--error);
 }
