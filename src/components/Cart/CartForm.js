@@ -40,9 +40,15 @@ const CartForm = (props) => {
       city: validCity,
     });
 
-    if (formIsValid) {
+    if (!formIsValid) {
       return;
     }
+    props.userForm({
+      name: enteredName,
+      street: enteredStreet,
+      postal: enteredPostal,
+      city: validCity,
+    });
   };
   return (
     <form onSubmit={onSubmitHandler} className={style.form}>
