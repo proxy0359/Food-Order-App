@@ -54,6 +54,7 @@ const Cart = (props) => {
     );
     setIsSubmitting(false);
     setIsSubmitted(true);
+    cartCtx.clear();
   };
 
   const cartActions = (
